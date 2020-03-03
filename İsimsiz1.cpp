@@ -41,8 +41,10 @@ int main()
 	Arguments device4;
 	Arguments diz[4] = { device1,device2,device3,device4 };
 
+		srand(time(0));
 		for (int i = 1; i < 5; i++)
 		{
+			
 			diz[i].temperature = rand() % 100+1;
 			cout<<"device"<<i<<" ";
 			check(diz[i].temperature);
